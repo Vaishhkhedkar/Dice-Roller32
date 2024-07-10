@@ -1,0 +1,37 @@
+           body{
+                 min-height: 100vh;
+            }
+            .app-title{
+                text-align: center;
+            }
+            .dice-img{
+                width: 300px;
+                height: 300px;
+                display: block;
+                margin: 20px auto;
+
+
+            }
+            .animate{
+                animation: roll is infinite;
+            }
+            .btn-roll{
+                width: 200px;
+             display: block;
+             margin: 20px auto;
+             font-size: 25px;
+             padding: 10px 20px;
+             border-radius: 10px;
+             border: none;
+             color: #f1ebeb;
+             cursor: pointer;
+             background-color: rgb(11, 17, 101);
+            }
+            @keyframes roll {
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360deg);  
+                }
+            }
